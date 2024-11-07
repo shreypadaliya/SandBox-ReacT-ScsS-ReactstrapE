@@ -1,0 +1,190 @@
+// Variables
+$primary-color: #747ed1;
+$secondary-color: #cacaca;
+$footer-bg: #232323;
+$footer-text-color: #b8b8b8;
+$input-bg-color: #272d32;
+$button-bg-color: #747ed1;
+$button-hover-bg-color: #ffffff;
+$button-text-color: #ffffff;
+$text-color: #cacaca;
+$input-border-color: #FFFFFF1A;
+
+// Mixin for hover effects
+@mixin hover-effect($color) {
+  &:hover {
+    color: $color !important;
+  }
+}
+
+// Mixin for font styles
+@mixin font-styles($size, $weight, $line-height) {
+  font-size: $size !important;
+  font-weight: $weight !important;
+  line-height: $line-height !important;
+}
+
+.footmaincom {
+  padding: 12.5px 25px;
+  background-color: #e9eaf8;
+}
+
+.footer {
+  background-color: $footer-bg;
+  padding: 40px 20px;
+  color: $footer-text-color;
+  border-radius: 20px;
+
+  .footmainwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    flex: 1 1 200px;
+    margin: 10px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    p {
+      @include font-styles(17px, 500, 28.9px);
+      color: $text-color !important;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 8px;
+
+        a {
+          @include font-styles(17px, 500, 28.9px);
+          color: $text-color !important;
+          text-decoration: none !important;
+          transition: color 0.3s;
+
+          @include hover-effect($primary-color);
+        }
+      }
+    }
+
+    // Move form styles inside footer-column
+    form {
+      display: flex;
+      margin-top: 10px;
+      width: 100%;
+
+      input[type="email"] {
+        padding: 10px !important;
+        border: 1px solid $input-border-color !important;
+        border-radius: 8px 0 0 8px !important;
+        flex: 1 !important;
+        background-color: $input-bg-color !important;
+        color: #959ca9 !important;
+        width: 100% !important;
+      }
+
+      button {
+        padding: 10px 20px !important;
+        background-color: $button-bg-color !important;
+        color: $button-text-color !important;
+        border: none !important;
+        cursor: pointer !important;
+        transition: all 0.3s ease !important;
+        border-radius: 0 8px 8px 0 !important;
+        font-weight: 600 !important;
+        font-size: 17px !important;
+        line-height: 28.9px !important;
+        white-space: nowrap !important;
+
+        &:hover {
+          background-color: $button-hover-bg-color !important;
+          color: $button-bg-color !important;
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  .foot1info {
+    margin-top: 24px;
+    margin-bottom: 31px;
+    @include font-styles(17px, 500, 28.9px);
+    color: $secondary-color !important;
+
+    .footername {
+      @include hover-effect($primary-color);
+    }
+  }
+
+  .foot1info2 {
+    @include font-styles(17px, 500, 28.9px);
+    color: $secondary-color !important;
+    text-decoration: none !important;
+
+    @include hover-effect($primary-color);
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 14px;
+
+    a {
+      color: $footer-text-color;
+      font-size: 18px;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .footer {
+    .footmainwrap {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-column {
+      margin-bottom: 20px;
+      text-align: center;
+      width: 100%;
+
+      form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        input[type="email"] {
+          border-radius: 8px !important;
+          margin-bottom: 10px;
+        }
+
+        button {
+          border-radius: 8px !important;
+          width: 100%;
+        }
+      }
+    }
+
+    .social-icons {
+      justify-content: center;
+    }
+  }
+}

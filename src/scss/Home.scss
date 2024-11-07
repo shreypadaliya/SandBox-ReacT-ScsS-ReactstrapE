@@ -1,0 +1,107 @@
+// Define variables for colors, font sizes, and other properties
+$primary-bg-color: #e9eaf8;
+$home-bg-image: url("../assets/movie2.jpg.png");
+$gradient-start: #542461;
+$gradient-end: #332487;
+$white: #fff;
+
+// Define mixins for reusable properties
+@mixin text-styles($font-weight, $font-size, $line-height, $color) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+// Home Section Styles
+.homemain {
+  padding: 25px;
+  background-color: $primary-bg-color;
+}
+
+.homesemimain {
+  position: relative;
+  width: 100%;
+  height: 864px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: $home-bg-image;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, $gradient-start, $gradient-end);
+    opacity: 0.5;
+    z-index: 1;
+    border-radius: 20px;
+  }
+
+  * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.homecontentwrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  text-align: center;
+}
+
+.homehead {
+  @include text-styles(600, 54px, 62.1px, $white);
+}
+
+.homesemihead {
+  @include text-styles(500, 24px, 38.4px, $white);
+}
+
+// Media Queries for Responsiveness
+@media (max-width: 1200px) {
+  .homehead {
+    font-size: 48px;
+  }
+
+  .homesemihead {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .homehead {
+    font-size: 40px;
+  }
+
+  .homesemihead {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homehead {
+    font-size: 32px;
+  }
+
+  .homesemihead {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .homehead {
+    font-size: 28px;
+  }
+
+  .homesemihead {
+    font-size: 16px;
+  }
+}

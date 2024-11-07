@@ -1,0 +1,242 @@
+.workingprocmain {
+  padding: 12.5px 25px !important;
+  background-color: #e9eaf8;
+}
+
+.grid-item {
+  width: 100%;
+}
+
+.grid-container {
+  margin-inline: 0;
+}
+
+.workingprocwrap {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.workingprocsemiwrap {
+  display: flex;
+  flex-direction: column;
+  gap: 69.99px;
+  padding: 140px 0;
+}
+
+.wprocmainimg {
+  position: relative;
+  z-index: 3;
+}
+
+.wprocmainimgsemi1 {
+  position: absolute;
+  z-index: -2;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: -81px;
+  max-width: 100%;
+}
+
+.workingprocsemimain {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.workingproctextwrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.workingproctext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.workingheading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21.6px;
+  color: #aab0bc;
+}
+
+.workingpara {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50.4px;
+  color: #343f52;
+  max-width: 832.32px;
+}
+
+.workingparaimg {
+  position: absolute;
+  right: -180px;
+  top: -30px;
+}
+
+.workinginfomain {
+  display: flex;
+  margin-top: 50.39px;
+}
+
+.workinginfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  position: relative;
+}
+
+.workinginfoarrowimg1 {
+  position: absolute;
+  left: 28%;
+}
+
+.workinginfoarrowimg2 {
+  position: absolute;
+  right: 28%;
+}
+
+.workinginfohead {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30.8px;
+  color: #343f52;
+  margin-top: 20px;
+  margin-bottom: 13.99px;
+}
+
+.workinginfopara {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28.9px;
+  color: #60697b;
+  max-width: 281px;
+}
+
+.workinginfoimg {
+  height: 44px;
+  width: 44px;
+}
+
+.wprocmainimg img,
+.workinginfoimg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .workingprocsemiwrap {
+    padding: 100px 0;
+    gap: 50px;
+  }
+  .workingparaimg {
+    display: none;
+  }
+  .workingpara {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .workinginfo {
+    max-width: 320px;
+  }
+  .workinginfohead {
+    font-size: 20px;
+  }
+  .workinginfopara {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .workingprocmain {
+    padding: 12.5px 25px !important;
+  }
+  .workingprocwrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .workingprocsemiwrap {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .workingpara {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .workinginfo {
+    max-width: 300px;
+  }
+  .workinginfohead {
+    font-size: 18px;
+  }
+  .workinginfopara {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .workingprocmain {
+    padding: 10px;
+  }
+  .workinginfoarrowimg1,
+  .workinginfoarrowimg2 {
+    display: none;
+  }
+  .workingpara {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .workinginfo {
+    max-width: 280px;
+  }
+  .workinginfohead {
+    font-size: 16px;
+  }
+  .workinginfopara {
+    font-size: 13px;
+  }
+  .workinginfomain {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .workingprocwrap {
+    padding: 10px;
+  }
+  .workingpara {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .workinginfo {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .workinginfohead {
+    font-size: 14px;
+  }
+  .workinginfopara {
+    font-size: 12px;
+  }
+}
+.responsive-video {
+  position: relative;
+  width: 100%;
+  max-width: 1070px;
+  padding-top: 56.25%;
+}
+
+.responsive-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}/*# sourceMappingURL=Workingproc.css.map */
