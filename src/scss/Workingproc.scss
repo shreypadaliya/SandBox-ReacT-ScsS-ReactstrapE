@@ -1,35 +1,16 @@
-// Define variables for colors, font sizes, and other reusable properties
-$primary-bg-color: #e9eaf8;
-$white: #fff;
-$light-gray: #aab0bc;
-$dark-gray: #343f52;
-$secondary-gray: #60697b;
-$arrow-img-left: 28%;
-$arrow-img-right: 28%;
-$max-width-380px: 380px;
-$max-width-320px: 320px;
-$max-width-300px: 300px;
-$max-width-280px: 280px;
-$max-width-1070px: 1070px;
-
-// Define mixins for reusable properties
-@mixin text-styles($font-weight, $font-size, $line-height, $color) {
-  font-weight: $font-weight;
-  font-size: $font-size;
-  line-height: $line-height;
-  color: $color;
-}
+@import "mixing";
+@import "variable";
 
 // Working Process Section Styles
 .workingprocmain {
   padding: 12.5px 25px !important;
-  background-color: $primary-bg-color;
+  background-color: $wopro-primary-bg-color;
 }
 
-.grid-item{
+.grid-item {
   width: 100%;
 }
-.grid-container{
+.grid-container {
   margin-inline: 0;
 }
 
@@ -62,7 +43,7 @@ $max-width-1070px: 1070px;
 }
 
 .workingprocsemimain {
-  background-color: $white;
+  background-color: $wopro-white;
   border-radius: 20px;
 }
 
@@ -81,11 +62,11 @@ $max-width-1070px: 1070px;
 }
 
 .workingheading {
-  @include text-styles(600, 16px, 21.6px, $light-gray);
+  @include text-styles(600, 16px, 21.6px, $wopro-light-gray);
 }
 
 .workingpara {
-  @include text-styles(600, 42px, 50.4px, $dark-gray);
+  @include text-styles(600, 42px, 50.4px, $wopro-dark-gray);
   max-width: 832.32px;
 }
 
@@ -105,29 +86,29 @@ $max-width-1070px: 1070px;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  max-width: $max-width-380px;
+  max-width: $wopro-max-width-380px;
   width: 100%;
   position: relative;
 }
 
 .workinginfoarrowimg1 {
   position: absolute;
-  left: $arrow-img-left;
+  left: $wopro-arrow-img-left;
 }
 
 .workinginfoarrowimg2 {
   position: absolute;
-  right: $arrow-img-right;
+  right: $wopro-arrow-img-right;
 }
 
 .workinginfohead {
-  @include text-styles(600, 22px, 30.8px, $dark-gray);
+  @include text-styles(600, 22px, 30.8px, $wopro-dark-gray);
   margin-top: 20px;
   margin-bottom: 13.99px;
 }
 
 .workinginfopara {
-  @include text-styles(500, 17px, 28.9px, $secondary-gray);
+  @include text-styles(500, 17px, 28.9px, $wopro-secondary-gray);
   max-width: 281px;
 }
 
@@ -159,7 +140,7 @@ $max-width-1070px: 1070px;
   }
 
   .workinginfo {
-    max-width: $max-width-320px;
+    max-width: $wopro-max-width-320px;
   }
 
   .workinginfohead {
@@ -192,7 +173,7 @@ $max-width-1070px: 1070px;
   }
 
   .workinginfo {
-    max-width: $max-width-300px;
+    max-width: $wopro-max-width-300px;
   }
 
   .workinginfohead {
@@ -220,7 +201,7 @@ $max-width-1070px: 1070px;
   }
 
   .workinginfo {
-    max-width: $max-width-280px;
+    max-width: $wopro-max-width-280px;
   }
 
   .workinginfohead {
@@ -265,7 +246,7 @@ $max-width-1070px: 1070px;
 .responsive-video {
   position: relative;
   width: 100%;
-  max-width: $max-width-1070px;
+  max-width: $wopro-max-width-1070px;
   padding-top: 56.25%; // Aspect ratio 16:9
 }
 

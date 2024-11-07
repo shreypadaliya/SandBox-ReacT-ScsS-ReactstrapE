@@ -1,28 +1,5 @@
-// Variables
-$primary-color: #747ed1;
-$secondary-color: #cacaca;
-$footer-bg: #232323;
-$footer-text-color: #b8b8b8;
-$input-bg-color: #272d32;
-$button-bg-color: #747ed1;
-$button-hover-bg-color: #ffffff;
-$button-text-color: #ffffff;
-$text-color: #cacaca;
-$input-border-color: #FFFFFF1A;
-
-// Mixin for hover effects
-@mixin hover-effect($color) {
-  &:hover {
-    color: $color !important;
-  }
-}
-
-// Mixin for font styles
-@mixin font-styles($size, $weight, $line-height) {
-  font-size: $size !important;
-  font-weight: $weight !important;
-  line-height: $line-height !important;
-}
+@import "mixing";
+@import "variable";
 
 .footmaincom {
   padding: 12.5px 25px;
@@ -30,9 +7,9 @@ $input-border-color: #FFFFFF1A;
 }
 
 .footer {
-  background-color: $footer-bg;
+  background-color: $foot-footer-bg;
   padding: 40px 20px;
-  color: $footer-text-color;
+  color: $foot-footer-text-color;
   border-radius: 20px;
 
   .footmainwrap {
@@ -54,7 +31,7 @@ $input-border-color: #FFFFFF1A;
 
     p {
       @include font-styles(17px, 500, 28.9px);
-      color: $text-color !important;
+      color: $foot-text-color !important;
     }
 
     ul {
@@ -66,11 +43,11 @@ $input-border-color: #FFFFFF1A;
 
         a {
           @include font-styles(17px, 500, 28.9px);
-          color: $text-color !important;
+          color: $foot-text-color !important;
           text-decoration: none !important;
           transition: color 0.3s;
 
-          @include hover-effect($primary-color);
+          @include hover-effect($foot-primary-color);
         }
       }
     }
@@ -83,18 +60,18 @@ $input-border-color: #FFFFFF1A;
 
       input[type="email"] {
         padding: 10px !important;
-        border: 1px solid $input-border-color !important;
+        border: 1px solid $foot-input-border-color !important;
         border-radius: 8px 0 0 8px !important;
         flex: 1 !important;
-        background-color: $input-bg-color !important;
+        background-color: $foot-input-bg-color !important;
         color: #959ca9 !important;
         width: 100% !important;
       }
 
       button {
         padding: 10px 20px !important;
-        background-color: $button-bg-color !important;
-        color: $button-text-color !important;
+        background-color: $foot-button-bg-color !important;
+        color: $foot-button-text-color !important;
         border: none !important;
         cursor: pointer !important;
         transition: all 0.3s ease !important;
@@ -105,8 +82,8 @@ $input-border-color: #FFFFFF1A;
         white-space: nowrap !important;
 
         &:hover {
-          background-color: $button-hover-bg-color !important;
-          color: $button-bg-color !important;
+          background-color: $foot-button-hover-bg-color !important;
+          color: $foot-button-bg-color !important;
         }
       }
     }
@@ -121,19 +98,19 @@ $input-border-color: #FFFFFF1A;
     margin-top: 24px;
     margin-bottom: 31px;
     @include font-styles(17px, 500, 28.9px);
-    color: $secondary-color !important;
+    color: $foot-secondary-color !important;
 
     .footername {
-      @include hover-effect($primary-color);
+      @include hover-effect($foot-primary-color);
     }
   }
 
   .foot1info2 {
     @include font-styles(17px, 500, 28.9px);
-    color: $secondary-color !important;
+    color: $foot-secondary-color !important;
     text-decoration: none !important;
 
-    @include hover-effect($primary-color);
+    @include hover-effect($foot-primary-color);
   }
 
   .social-icons {
@@ -141,7 +118,7 @@ $input-border-color: #FFFFFF1A;
     gap: 14px;
 
     a {
-      color: $footer-text-color;
+      color: $foot-footer-text-color;
       font-size: 18px;
       text-decoration: none;
       transition: color 0.3s;
@@ -188,3 +165,34 @@ $input-border-color: #FFFFFF1A;
     }
   }
 }
+
+// Define home mixins for reusable properties
+@mixin text-styles($font-weight, $font-size, $line-height, $color) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+// navbar Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin nav-link-style {
+  font-weight: $font-weight-nav;
+  font-size: $font-size-nav;
+  line-height: $line-height-nav;
+  color: $foot-primary-color;
+}
+
+@mixin dropdown-base {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+

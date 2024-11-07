@@ -1,0 +1,110 @@
+// Define client mixin for media queries
+@mixin media-query($size) {
+  @if $size == "large" {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $size == "medium" {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $size == "small" {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else if $size == "tablet" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+}
+
+// different 's Mixins
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin gap($size) {
+  gap: $size;
+}
+
+// footer Mixin for hover effects
+@mixin hover-effect($color) {
+  &:hover {
+    color: $color !important;
+  }
+}
+
+// Mixin for font styles
+@mixin font-styles($size, $weight, $line-height) {
+  font-size: $size !important;
+  font-weight: $weight !important;
+  line-height: $line-height !important;
+}
+
+// what we do Mixin for hover effects
+@mixin button-hover($bg-color, $text-color) {
+  &:hover {
+    background-color: $bg-color;
+    color: $text-color;
+    scale: 1.01;
+  }
+}
+
+// Define workingproc  mixins for reusable properties
+@mixin text-styles($font-weight, $font-size, $line-height, $color) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+// Mixins navbar
+@mixin flex-centernav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin link-style-nav {
+  font-weight: $font-weight-nav;
+  font-size: $font-size-nav;
+  line-height: $line-height-nav;
+  color: $primary-color;
+}
+
+@mixin dropdown-base-nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+// Our project Mixins
+@mixin flex-center-ourpro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid-layout-ourpro($columns, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, minmax(200px, 1fr));
+  row-gap: $gap;
+}
+
+@mixin button-hover-ourpro {
+  &:hover {
+    background-color: $button-hover-bg-color;
+    color: $button-hover-color;
+    scale: 1.01;
+    transition: transform 0.3s ease;
+  }
+}

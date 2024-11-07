@@ -1,5 +1,3 @@
-// src/data/projectData.js
-
 import ourproimg1 from "../assets/Figure → pd7.jpg.png";
 import ourproimg2 from "../assets/Figure → pd8.jpg.png";
 import ourproimg3 from "../assets/Figure → pd9.jpg.png";

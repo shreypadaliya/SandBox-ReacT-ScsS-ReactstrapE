@@ -316,6 +316,10 @@
     gap: 20px;
     padding-bottom: 20px;
   }
+  .achivesemi {
+    max-width: 100%;
+    width: 100%;
+  }
   .achivesemihead {
     font-size: 30px;
     line-height: 40px;
@@ -323,8 +327,5 @@
   .achivesemisub {
     font-size: 14px;
     line-height: 20px;
-  }
-  .achiveimg img {
-    width: 100%;
   }
 }/*# sourceMappingURL=different.css.map */

@@ -1,7 +1,5 @@
-// HomeMain.js
-import React from 'react';
-// import '../scss/main.scss'; 
-import '../scss/Home.scss'; 
+import React from "react";
+import "../scss/Home.scss";
 
 const Home = () => {
   return (

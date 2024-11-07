@@ -1,39 +1,17 @@
-// Variables
-$primary-color: #747ed1;
-$secondary-color: #e9eaf8;
-$tertiary-color: #fefefe;
-$text-color-light: #aab0bc;
-$text-color-dark: #343f52;
-$text-color-muted: #60697b;
-$font-weight-bold: 600;
-$font-weight-regular: 500;
-$font-size-large: 42px;
-$font-size-medium: 28px;
-$font-size-small: 16px;
-$line-height-large: 50.4px;
-$line-height-medium: 39.2px;
-$line-height-small: 21.6px;
-$border-radius: 20px;
-$button-radius: 100px;
+@import "mixing";
+@import "variable";
 
-// Mixin for hover effects
-@mixin button-hover($bg-color, $text-color) {
-  &:hover {
-    background-color: $bg-color;
-    color: $text-color;
-    scale: 1.01;
-  }
-}
+
 
 // Base styles
 .whatwedomain {
   padding: 12.5px 25px;
-  background-color: $secondary-color;
+  background-color: $whatwe-secondary-color;
 }
 
 .whatwedosemimain {
-  background-color: $tertiary-color;
-  border-radius: $border-radius;
+  background-color: $whatwe-tertiary-color;
+  border-radius: $whatwe-border-radius;
 }
 
 .whatwedocontwrap {
@@ -56,18 +34,18 @@ $button-radius: 100px;
 }
 
 .whatdohead {
-  font-weight: $font-weight-bold;
-  font-size: $font-size-small;
-  line-height: $line-height-small;
-  color: $text-color-light;
+  font-weight: $whatwe-font-weight-bold;
+  font-size: $whatwe-font-size-small;
+  line-height: $whatwe-line-height-small;
+  color: $whatwe-text-color-light;
   margin-bottom: 15px;
 }
 
 .whatdosub {
-  font-weight: $font-weight-bold;
-  font-size: $font-size-large;
-  line-height: $line-height-large;
-  color: $text-color-dark;
+  font-weight: $whatwe-font-weight-bold;
+  font-size: $whatwe-font-size-large;
+  line-height: $whatwe-line-height-large;
+  color: $whatwe-text-color-dark;
   max-width: 643.31px;
 }
 
@@ -93,18 +71,18 @@ $button-radius: 100px;
 }
 
 .webheading {
-  font-weight: $font-weight-bold;
-  font-size: $font-size-medium;
-  line-height: $line-height-medium;
-  color: $text-color-dark;
+  font-weight: $whatwe-font-weight-bold;
+  font-size: $whatwe-font-size-medium;
+  line-height: $whatwe-line-height-medium;
+  color: $whatwe-text-color-dark;
   margin-bottom: 22px;
 }
 
 .webpara {
-  font-weight: $font-weight-regular;
+  font-weight: $whatwe-font-weight-regular;
   font-size: 17px;
   line-height: 28.9px;
-  color: #60697b;
+  color: $whatwe-text-color-muted;
   margin-bottom: 28px;
   max-width: 521.36px;
 }
@@ -117,8 +95,8 @@ $button-radius: 100px;
 }
 
 .checkwraper {
-  border-radius: $button-radius;
-  background-color: $secondary-color;
+  border-radius: $whatwe-button-radius;
+  background-color: $whatwe-secondary-color;
   height: 20px;
   width: 20px;
   display: flex;
@@ -126,25 +104,25 @@ $button-radius: 100px;
 }
 
 .webcheckinfo {
-  font-weight: $font-weight-regular;
+  font-weight: $whatwe-font-weight-regular;
   font-size: 17px;
   line-height: 28.9px;
-  color: $text-color-muted;
+  color: $whatwe-text-color-muted;
 }
 
 .morebutton {
-  color: $primary-color;
+  color: $whatwe-primary-color;
   font-size: 17px;
   line-height: 28.9px;
-  font-weight: $font-weight-bold;
+  font-weight: $whatwe-font-weight-bold;
   padding: 16px 25px;
-  background-color: $secondary-color;
-  border: $secondary-color;
-  border-radius: $button-radius;
+  background-color: $whatwe-secondary-color;
+  border: $whatwe-secondary-color;
+  border-radius: $whatwe-button-radius;
   margin-top: 18.96px;
   transition: transform 0.3s ease;
 
-  @include button-hover($primary-color, $secondary-color);
+  @include button-hover($whatwe-primary-color, $whatwe-secondary-color);
 }
 
 .webdesignimg {
@@ -154,7 +132,8 @@ $button-radius: 100px;
 
 // Media Queries
 @media (max-width: 1200px) {
-  .webdesignmain, .webdesignmain2 {
+  .webdesignmain,
+  .webdesignmain2 {
     gap: 60px;
   }
 
@@ -177,7 +156,8 @@ $button-radius: 100px;
     margin-bottom: 30px;
   }
 
-  .webdesignmain, .webdesignmain2 {
+  .webdesignmain,
+  .webdesignmain2 {
     flex-direction: column;
     gap: 40px;
   }
@@ -201,7 +181,8 @@ $button-radius: 100px;
     margin-bottom: 20px;
   }
 
-  .webdesignmain, .webdesignmain2 {
+  .webdesignmain,
+  .webdesignmain2 {
     gap: 30px;
   }
 
@@ -224,7 +205,8 @@ $button-radius: 100px;
     margin-bottom: 15px;
   }
 
-  .webdesignmain, .webdesignmain2 {
+  .webdesignmain,
+  .webdesignmain2 {
     gap: 20px;
   }
 
@@ -244,3 +226,4 @@ $button-radius: 100px;
     padding: 12px 20px;
   }
 }
+

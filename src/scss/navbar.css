@@ -24,7 +24,7 @@
   font-weight: 600;
   font-size: 17px;
   line-height: 28.9px;
-  color: #343F52;
+  color: #343f52;
 }
 
 .navdrophold {
@@ -39,7 +39,7 @@
           user-select: none;
 }
 .navdrophold:hover {
-  color: #747ED1;
+  color: #747ed1;
 }
 .navdrophold:hover .dropdown-content {
   display: block;
@@ -58,11 +58,11 @@
   font-weight: 600;
   font-size: 17px;
   line-height: 28.9px;
-  color: #343F52;
+  color: #343f52;
   cursor: pointer;
 }
 .navlinkholdatag:hover {
-  color: #747ED1;
+  color: #747ed1;
 }
 
 .dropdown-content {

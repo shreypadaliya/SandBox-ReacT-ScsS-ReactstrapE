@@ -1,5 +1,5 @@
 .ourprojectmain {
-  background-color: #E9EAF8;
+  background-color: #e9eaf8;
   padding: 12.5px 25px;
 }
 
@@ -12,7 +12,7 @@
   font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 21.6px !important;
-  color: #AAB0BC !important;
+  color: #aab0bc !important;
   margin-bottom: 15px;
 }
 
@@ -20,7 +20,7 @@
   font-weight: 600 !important;
   font-size: 42px !important;
   line-height: 50.4px !important;
-  color: #343F52 !important;
+  color: #343f52 !important;
   max-width: 778.86px !important;
   text-align: center !important;
   margin-bottom: 50px !important;
@@ -82,7 +82,7 @@
   font-weight: 600;
   font-size: 22px;
   line-height: 30.8px;
-  color: #343F52;
+  color: #343f52;
   margin-top: 31px;
   text-align: left;
 }
@@ -91,7 +91,7 @@
   font-weight: 600 !important;
   font-size: 14px !important;
   line-height: 23.8px !important;
-  color: #9499A3 !important;
+  color: #9499a3 !important;
   text-align: left !important;
   margin-top: 12.79px !important;
 }
@@ -102,16 +102,15 @@
   line-height: 28.9px;
   font-weight: 600;
   padding: 19px 30px;
-  background-color: #747ED1;
-  border: #747ED1;
+  background-color: #747ed1;
+  border: #747ed1;
   border-radius: 100px;
   margin-top: 50px;
 }
 .projectbutton:hover {
-  background-color: #E9EAF8;
-  color: #747ED1;
+  background-color: #e9eaf8;
+  color: #747ed1;
   scale: 1.01;
-  transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 

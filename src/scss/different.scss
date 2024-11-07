@@ -1,40 +1,13 @@
-// Variables
-$primary-color: #343f52;
-$secondary-color: #aab0bc;
-$tertiary-color: #60697b;
-$highlight-color: #747ed1;
-$orange-color: #FF8200;
-$white-color: white;
-$bg-color: #e9eaf8;
-$font-size-small: 14px;
-$font-size-medium: 16px;
-$font-size-large: 18px;
-$font-size-xlarge: 20px;
-$font-size-xxlarge: 32px;
-$font-size-xxxlarge: 42px;
-
-// Mixins
-@mixin text-center {
-  text-align: center;
-}
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin gap($size) {
-  gap: $size;
-}
+@import "mixing";
+@import "variable";
 
 // Main container styles
 .diffmain {
-  background-color: $bg-color;
+  background-color: $diff-bg-color;
   padding: 12.5px 25px;
 
   .diffsubmain {
-    background-color: $white-color;
+    background-color: $diff-white-color;
     border-radius: 20px;
 
     .diffsubsemimain {
@@ -53,7 +26,7 @@ $font-size-xxxlarge: 42px;
   > div:first-child {
     flex: 1;
     max-width: 50%;
-    
+
     img {
       width: 100%;
       height: auto;
@@ -72,16 +45,16 @@ $font-size-xxxlarge: 42px;
 // Text styling
 .diffhead {
   font-weight: 600;
-  font-size: $font-size-medium;
+  font-size: $diff-font-size-medium;
   line-height: 21.6px;
-  color: $secondary-color;
+  color: $diff-secondary-color;
 }
 
 .diffsubhead {
   font-weight: 600;
-  font-size: $font-size-xxxlarge;
+  font-size: $diff-font-size-xxxlarge;
   line-height: 50.4px;
-  color: $primary-color;
+  color: $diff-primary-color;
   margin-top: 15.6px;
   margin-bottom: 40.39px;
 }
@@ -106,16 +79,16 @@ $font-size-xxxlarge: 42px;
 
       .subleftsemiinfoshead {
         font-weight: 600;
-        font-size: $font-size-large;
+        font-size: $diff-font-size-large;
         line-height: 29px;
-        color: $primary-color;
+        color: $diff-primary-color;
       }
 
       .subleftsemiinfospara {
         font-weight: 500;
         font-size: 17px;
         line-height: 28.9px;
-        color: $tertiary-color;
+        color: $diff-tertiary-color;
         max-width: 173.26px;
       }
     }
@@ -234,17 +207,17 @@ $font-size-xxxlarge: 42px;
 
   .joincomhead {
     font-weight: 600;
-    font-size: $font-size-medium;
+    font-size: $diff-font-size-medium;
     line-height: 21.6px;
-    color: $secondary-color;
+    color: $diff-secondary-color;
     @include text-center;
   }
 
   .joincompara {
     font-weight: 600;
-    font-size: $font-size-xxxlarge;
+    font-size: $diff-font-size-xxxlarge;
     line-height: 50.4px;
-    color: $primary-color;
+    color: $diff-primary-color;
     @include text-center;
     max-width: 741.95px;
     display: flex;
@@ -272,7 +245,7 @@ $font-size-xxxlarge: 42px;
   font-weight: 600;
   line-height: 45px;
   font-size: 45px;
-  color: $highlight-color;
+  color: $diff-highlight-color;
   margin-bottom: 14px;
 }
 
@@ -280,7 +253,7 @@ $font-size-xxxlarge: 42px;
   font-weight: 600;
   line-height: 28.9px;
   font-size: 17px;
-  color: $tertiary-color;
+  color: $diff-tertiary-color;
 }
 
 .achiveimg {
@@ -298,7 +271,7 @@ $font-size-xxxlarge: 42px;
   }
 
   .joincomhead {
-    font-size: $font-size-small;
+    font-size: $diff-font-size-small;
     line-height: 18px;
   }
 
@@ -337,7 +310,7 @@ $font-size-xxxlarge: 42px;
   }
 
   .joincomhead {
-    font-size: $font-size-small;
+    font-size: $diff-font-size-small;
     line-height: 18px;
   }
 
@@ -393,6 +366,11 @@ $font-size-xxxlarge: 42px;
     padding-bottom: 20px;
   }
 
+  .achivesemi {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .achivesemihead {
     font-size: 30px;
     line-height: 40px;
@@ -401,9 +379,5 @@ $font-size-xxxlarge: 42px;
   .achivesemisub {
     font-size: 14px;
     line-height: 20px;
-  }
-
-  .achiveimg img {
-    width: 100%;
   }
 }
