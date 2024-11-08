@@ -1,13 +1,14 @@
 import React from "react";
 import "../scss/client.scss";
-import clientimg1 from "../assets/Figure → z1.png.png";
-import clientimg2 from "../assets/Figure → z2.png.png";
-import clientimg3 from "../assets/Figure → z3.png.png";
-import clientimg4 from "../assets/Figure → z4.png.png";
-import clientimg5 from "../assets/Figure → z5.png.png";
-import clientimg6 from "../assets/Figure → z6.png.png";
-import clientimg7 from "../assets/Figure → z7.png.png";
-import clientimg8 from "../assets/Figure → z8.png.png";
+// import "../scss/styles.scss";
+import clientimg1 from "../assets/Figure  z1.png.png";
+import clientimg2 from "../assets/Figure  z2.png.png";
+import clientimg3 from "../assets/Figure  z3.png.png";
+import clientimg4 from "../assets/Figure  z4.png.png";
+import clientimg5 from "../assets/Figure  z5.png.png";
+import clientimg6 from "../assets/Figure  z6.png.png";
+import clientimg7 from "../assets/Figure  z7.png.png";
+import clientimg8 from "../assets/Figure  z8.png.png";
 import { Row, Col } from "reactstrap";
 
 const client = () => {

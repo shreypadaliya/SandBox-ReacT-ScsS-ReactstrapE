@@ -102,9 +102,9 @@
 
 @mixin button-hover-ourpro {
   &:hover {
-    background-color: $button-hover-bg-color;
-    color: $button-hover-color;
-    scale: 1.01;
-    transition: transform 0.3s ease;
+    background-color: $button-hover-bg-color !important;
+    color: $button-hover-color !important;
+    scale: 1.01 !important;
+    transition: transform 0.3s ease !important;
   }
 }

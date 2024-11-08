@@ -1,9 +1,9 @@
-import ourproimg1 from "../assets/Figure → pd7.jpg.png";
-import ourproimg2 from "../assets/Figure → pd8.jpg.png";
-import ourproimg3 from "../assets/Figure → pd9.jpg.png";
-import ourproimg4 from "../assets/Figure → pd10.jpg.png";
-import ourproimg5 from "../assets/Figure → pd11.jpg.png";
-import ourproimg6 from "../assets/Figure → pd12.jpg.png";
+import ourproimg1 from "../assets/Figure  pd7.jpg.png";
+import ourproimg2 from "../assets/Figure  pd8.jpg.png";
+import ourproimg3 from "../assets/Figure  pd9.jpg.png";
+import ourproimg4 from "../assets/Figure  pd10.jpg.png";
+import ourproimg5 from "../assets/Figure  pd11.jpg.png";
+import ourproimg6 from "../assets/Figure  pd12.jpg.png";
 
 const projectData = [
   {

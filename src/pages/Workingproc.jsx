@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/Workingproc.scss";
+import "../scss/styles.scss";
 import workimg1 from "../assets/SVGsmall.png";
 import workimg2 from "../assets/Layer 2.png";
 import working3 from "../assets/SVG (33).png";
@@ -17,7 +17,7 @@ const workingproc = () => {
             <div className="wprocmainimg">
               <div className="responsive-video">
                 <video
-                  src="./videos/your-video-file.mp4"
+                  src="http://media.w3.org/2010/05/sintel/trailer.mp4"
                   className="wprocmainimgsemi1"
                   controls
                   autoPlay

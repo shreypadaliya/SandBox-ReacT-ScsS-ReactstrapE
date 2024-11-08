@@ -1,9 +1,9 @@
-import diffimg1 from "../assets/Figure → about12.jpg.png";
+import diffimg1 from "../assets/Figure  about12.jpg.png";
 import diffimg2 from "../assets/SVG.png";
 import diffimg3 from "../assets/SVG (1).png";
 import diffimg4 from "../assets/SVG (2).png";
 import diffimg5 from "../assets/SVG (3).png";
-import diffimg6 from "../assets/Figure → about26.png.png";
+import diffimg6 from "../assets/Figure  about26.png.png";
 
 export const differentData = {
   mainImage: diffimg1,

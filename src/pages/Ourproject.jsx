@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import projectData from "../data/projectData";
-import "../scss/Ourproject.scss";
+import "../scss/styles.scss";
 
 const Ourproject = () => {
   return (
@@ -23,7 +23,7 @@ const Ourproject = () => {
                   xs="12"
                   sm="6"
                   lg="4"
-                  className="grid-item"
+                  className="grid-item-our"
                 >
                   <div className="ourprojectimageholder">
                     <img

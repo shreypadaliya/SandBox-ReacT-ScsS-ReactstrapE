@@ -1,11 +1,9 @@
-import "./App.css";
-import "./scss/main.scss";
-import Home from "./components/Home";
-import Whatwedo from "./components/Whatwedo";
-import Workingproc from "./components/Workingproc";
-import OurProject from "./components/Ourproject";
-import Client from "./components/Client";
-import Different from "./components/Different";
+import Home from "./pages/Home";
+import Whatwedo from "./pages/Whatwedo";
+import Workingproc from "./pages/Workingproc";
+import OurProject from "./pages/Ourproject";
+import Client from "./pages/Client";
+import Different from "./pages/Different";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 

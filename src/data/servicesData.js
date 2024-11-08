@@ -1,6 +1,6 @@
-import whatimg1 from "../assets/Figure → ui4.png.png";
-import whatimg2 from "../assets/Figure → ui1.png.png";
-import whatimg3 from "../assets/Figure → ui5.png.png";
+import whatimg1 from "../assets/Figure  ui4.png.png";
+import whatimg2 from "../assets/Figure  ui1.png.png";
+import whatimg3 from "../assets/Figure  ui5.png.png";
 import righttick from "../assets/Icon.png";
 
 const services = [

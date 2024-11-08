@@ -1,11 +1,11 @@
 import React from "react";
-import "../scss/footer.scss";
+import "../scss/styles.scss";
 import footimg1 from "../assets/logo-light.png.png";
-import footimg2 from "../assets/Nav → Link.png";
-import footimg3 from "../assets/Nav → Link (1).png";
-import footimg4 from "../assets/Nav → Link (2).png";
-import footimg5 from "../assets/Nav → Link (3).png";
-import footimg6 from "../assets/Nav → Link (4).png";
+import footimg2 from "../assets/Nav  Link.png";
+import footimg3 from "../assets/Nav  Link (1).png";
+import footimg4 from "../assets/Nav  Link (2).png";
+import footimg5 from "../assets/Nav  Link (3).png";
+import footimg6 from "../assets/Nav  Link (4).png";
 
 const footer = () => {
   const validateForm = (e) => {
@@ -23,7 +23,7 @@ const footer = () => {
     <div className="footmaincom">
       <footer className="footer">
         <div className="container footmainwrap">
-          {/* Column 1 */}
+          
           <div className="footer-column">
             <div>
               <img src={footimg1} alt="Logo" />
@@ -51,7 +51,7 @@ const footer = () => {
             </div>
           </div>
 
-          {/* Column 2 */}
+          
           <div className="footer-column">
             <h3>Get in Touch</h3>
             <a
@@ -75,7 +75,7 @@ const footer = () => {
             </p>
           </div>
 
-          {/* Column 3 */}
+         
           <div className="footer-column">
             <h3>Learn More</h3>
             <ul>
@@ -97,7 +97,7 @@ const footer = () => {
             </ul>
           </div>
 
-          {/* Column 4 */}
+          
           <div className="footer-column">
             <h3>Our Newsletter</h3>
             <p>

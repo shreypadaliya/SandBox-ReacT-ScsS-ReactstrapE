@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/whatwedo.scss";
+import "../scss/styles.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import services from "../data/servicesData";
 
