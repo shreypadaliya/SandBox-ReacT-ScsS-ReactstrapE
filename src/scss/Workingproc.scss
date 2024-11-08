@@ -4,7 +4,7 @@
 // Working Process Section Styles
 .workingprocmain {
   padding: 12.5px 25px !important;
-  background-color: $wopro-primary-bg-color;
+  background-color: $color-primary-bg;
 }
 
 .grid-item {
@@ -43,7 +43,7 @@
 }
 
 .workingprocsemimain {
-  background-color: $wopro-white;
+  background-color: $color-white;
   border-radius: 20px;
 }
 
@@ -62,23 +62,24 @@
 }
 
 .workingheading {
-  @include text-styles(600, 16px, 21.6px, $wopro-light-gray);
+  @include text-styles(600, 16px, 21.6px, $color-light-gray);
 }
 
 .workingpara {
-  @include text-styles(600, 42px, 50.4px, $wopro-dark-gray);
+  @include text-styles(600, 42px, 50.4px, $color-dark-gray);
   max-width: 832.32px;
 }
 
 .workingparaimg {
   position: absolute;
-  right: -180px;
+  right: -80px;
   top: -30px;
 }
 
 .workinginfomain {
   display: flex;
   margin-top: 50.39px;
+  gap: 40px;
 }
 
 .workinginfo {
@@ -102,13 +103,13 @@
 }
 
 .workinginfohead {
-  @include text-styles(600, 22px, 30.8px, $wopro-dark-gray);
+  @include text-styles(600, 22px, 30.8px, $color-dark-gray);
   margin-top: 20px;
   margin-bottom: 13.99px;
 }
 
 .workinginfopara {
-  @include text-styles(500, 17px, 28.9px, $wopro-secondary-gray);
+  @include text-styles(500, 17px, 28.9px, $color-muted-gray);
   max-width: 281px;
 }
 

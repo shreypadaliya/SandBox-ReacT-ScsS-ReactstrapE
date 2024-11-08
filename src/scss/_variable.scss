@@ -1,29 +1,27 @@
+// Unique variables for common values
+$color-light-gray: #aab0bc;
+$color-dark-gray: #343f52;
+$color-muted-gray: #60697b;
+$color-primary-bg: #e9eaf8;
+$color-white: #fff;
+$color-highlight: #747ed1;
+
 // Define home variables
-$home-primary-bg-color: #e9eaf8;
 $home-bg-image: url("../assets/movie2.jpg.png");
 $home-gradient-start: #542461;
 $home-gradient-end: #332487;
-$home-white: #fff;
 
 // Define client variables
-$cliprimary-color: #e9eaf8;
-$clisecondary-color: white;
-$cliheading-color: #aab0bc;
-$clisubheading-color: #343f52;
-$clisubtitle-color: #60697b;
+
 $cliimg-height: 91px;
 $cliimg-width: 136.66px;
 $cligrid-gap: 70px;
 $clicolumn-gap: 89.99px;
 $clifont-weight: 600;
 
-// what we done Variables
-$whatwe-primary-color: #747ed1;
-$whatwe-secondary-color: #e9eaf8;
+// What We Done variables
+
 $whatwe-tertiary-color: #fefefe;
-$whatwe-text-color-light: #aab0bc;
-$whatwe-text-color-dark: #343f52;
-$whatwe-text-color-muted: #60697b;
 $whatwe-font-weight-bold: 600;
 $whatwe-font-weight-regular: 500;
 $whatwe-font-size-large: 42px;
@@ -35,14 +33,8 @@ $whatwe-line-height-small: 21.6px;
 $whatwe-border-radius: 20px;
 $whatwe-button-radius: 100px;
 
-// different component Variables
-$diff-primary-color: #343f52;
-$diff-secondary-color: #aab0bc;
-$diff-tertiary-color: #60697b;
-$diff-highlight-color: #747ed1;
+// Different Component variables
 $diff-orange-color: #ff8200;
-$diff-white-color: white;
-$diff-bg-color: #e9eaf8;
 $diff-font-size-small: 14px;
 $diff-font-size-medium: 16px;
 $diff-font-size-large: 18px;
@@ -50,28 +42,104 @@ $diff-font-size-xlarge: 20px;
 $diff-font-size-xxlarge: 32px;
 $diff-font-size-xxxlarge: 42px;
 
-// footer Variables
-$foot-primary-color: #747ed1;
+// Footer Variables
 $foot-secondary-color: #cacaca;
 $foot-footer-bg: #232323;
 $foot-footer-text-color: #b8b8b8;
 $foot-input-bg-color: #272d32;
-$foot-button-bg-color: #747ed1;
-$foot-button-hover-bg-color: #ffffff;
-$foot-button-text-color: #ffffff;
-$foot-text-color: #cacaca;
+$foot-text-color: $foot-secondary-color;
 $foot-input-border-color: #ffffff1a;
 
 // Define variables of working process
-$wopro-primary-bg-color: #e9eaf8;
-$wopro-white: #fff;
-$wopro-light-gray: #aab0bc;
-$wopro-dark-gray: #343f52;
-$wopro-secondary-gray: #60697b;
-$wopro-arrow-img-left: 28%;
-$wopro-arrow-img-right: 28%;
+$wopro-arrow-img-left: 25%;
+$wopro-arrow-img-right: 25%;
 $wopro-max-width-380px: 380px;
 $wopro-max-width-320px: 320px;
 $wopro-max-width-300px: 300px;
 $wopro-max-width-280px: 280px;
 $wopro-max-width-1070px: 1070px;
+
+
+
+
+
+
+
+// // Define home variables
+// $home-primary-bg-color: #e9eaf8;
+// $home-bg-image: url("../assets/movie2.jpg.png");
+// $home-gradient-start: #542461;
+// $home-gradient-end: #332487;
+// $home-white: #fff;
+
+// // Define client variables
+// $cliprimary-color: #e9eaf8;
+// $clisecondary-color: white;
+// $cliheading-color: #aab0bc;
+// $clisubheading-color: #343f52;
+// $clisubtitle-color: #60697b;
+// $cliimg-height: 91px;
+// $cliimg-width: 136.66px;
+// $cligrid-gap: 70px;
+// $clicolumn-gap: 89.99px;
+// $clifont-weight: 600;
+
+// // what we done Variables
+// $whatwe-primary-color: #747ed1;
+// $whatwe-secondary-color: #e9eaf8;
+// $whatwe-tertiary-color: #fefefe;
+// $whatwe-text-color-light: #aab0bc;
+// $whatwe-text-color-dark: #343f52;
+// $whatwe-text-color-muted: #60697b;
+// $whatwe-font-weight-bold: 600;
+// $whatwe-font-weight-regular: 500;
+// $whatwe-font-size-large: 42px;
+// $whatwe-font-size-medium: 28px;
+// $whatwe-font-size-small: 16px;
+// $whatwe-line-height-large: 50.4px;
+// $whatwe-line-height-medium: 39.2px;
+// $whatwe-line-height-small: 21.6px;
+// $whatwe-border-radius: 20px;
+// $whatwe-button-radius: 100px;
+
+// // different component Variables
+// $diff-primary-color: #343f52;
+// $diff-secondary-color: #aab0bc;
+// $diff-tertiary-color: #60697b;
+// $diff-highlight-color: #747ed1;
+// $diff-orange-color: #ff8200;
+// $diff-white-color: white;
+// $diff-bg-color: #e9eaf8;
+// $diff-font-size-small: 14px;
+// $diff-font-size-medium: 16px;
+// $diff-font-size-large: 18px;
+// $diff-font-size-xlarge: 20px;
+// $diff-font-size-xxlarge: 32px;
+// $diff-font-size-xxxlarge: 42px;
+
+// // footer Variables
+// $foot-primary-color: #747ed1;
+// $foot-secondary-color: #cacaca;
+// $foot-footer-bg: #232323;
+// $foot-footer-text-color: #b8b8b8;
+// $foot-input-bg-color: #272d32;
+// $foot-button-bg-color: #747ed1;
+// $foot-button-hover-bg-color: #ffffff;
+// $foot-button-text-color: #ffffff;
+// $foot-text-color: #cacaca;
+// $foot-input-border-color: #ffffff1a;
+
+// // Define variables of working process
+// $wopro-primary-bg-color: #e9eaf8;
+// $wopro-white: #fff;
+// $wopro-light-gray: #aab0bc;
+// $wopro-dark-gray: #343f52;
+// $wopro-secondary-gray: #60697b;
+// $wopro-arrow-img-left: 28%;
+// $wopro-arrow-img-right: 28%;
+// $wopro-max-width-380px: 380px;
+// $wopro-max-width-320px: 320px;
+// $wopro-max-width-300px: 300px;
+// $wopro-max-width-280px: 280px;
+// $wopro-max-width-1070px: 1070px;
+

@@ -31,7 +31,7 @@
 
     p {
       @include font-styles(17px, 500, 28.9px);
-      color: $foot-text-color !important;
+      color: $foot-secondary-color !important;
     }
 
     ul {
@@ -43,11 +43,11 @@
 
         a {
           @include font-styles(17px, 500, 28.9px);
-          color: $foot-text-color !important;
+          color: $foot-secondary-color !important;
           text-decoration: none !important;
           transition: color 0.3s;
 
-          @include hover-effect($foot-primary-color);
+          @include hover-effect($color-highlight);
         }
       }
     }
@@ -70,8 +70,8 @@
 
       button {
         padding: 10px 20px !important;
-        background-color: $foot-button-bg-color !important;
-        color: $foot-button-text-color !important;
+        background-color: $color-highlight !important;
+        color: $color-white !important;
         border: none !important;
         cursor: pointer !important;
         transition: all 0.3s ease !important;
@@ -82,8 +82,8 @@
         white-space: nowrap !important;
 
         &:hover {
-          background-color: $foot-button-hover-bg-color !important;
-          color: $foot-button-bg-color !important;
+          background-color: $color-white !important;
+          color: $color-highlight !important;
         }
       }
     }
@@ -101,7 +101,7 @@
     color: $foot-secondary-color !important;
 
     .footername {
-      @include hover-effect($foot-primary-color);
+      @include hover-effect($color-highlight);
     }
   }
 
@@ -110,7 +110,7 @@
     color: $foot-secondary-color !important;
     text-decoration: none !important;
 
-    @include hover-effect($foot-primary-color);
+    @include hover-effect($color-highlight);
   }
 
   .social-icons {
@@ -185,7 +185,7 @@
   font-weight: $font-weight-nav;
   font-size: $font-size-nav;
   line-height: $line-height-nav;
-  color: $foot-primary-color;
+  color:$color-highlight;
 }
 
 @mixin dropdown-base {

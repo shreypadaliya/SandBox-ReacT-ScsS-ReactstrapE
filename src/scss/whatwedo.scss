@@ -6,7 +6,7 @@
 // Base styles
 .whatwedomain {
   padding: 12.5px 25px;
-  background-color: $whatwe-secondary-color;
+  background-color: $color-primary-bg;
 }
 
 .whatwedosemimain {
@@ -37,7 +37,7 @@
   font-weight: $whatwe-font-weight-bold;
   font-size: $whatwe-font-size-small;
   line-height: $whatwe-line-height-small;
-  color: $whatwe-text-color-light;
+  color: $color-light-gray;
   margin-bottom: 15px;
 }
 
@@ -45,7 +45,7 @@
   font-weight: $whatwe-font-weight-bold;
   font-size: $whatwe-font-size-large;
   line-height: $whatwe-line-height-large;
-  color: $whatwe-text-color-dark;
+  color: $color-dark-gray;
   max-width: 643.31px;
 }
 
@@ -74,7 +74,7 @@
   font-weight: $whatwe-font-weight-bold;
   font-size: $whatwe-font-size-medium;
   line-height: $whatwe-line-height-medium;
-  color: $whatwe-text-color-dark;
+  color: $color-dark-gray;
   margin-bottom: 22px;
 }
 
@@ -82,7 +82,7 @@
   font-weight: $whatwe-font-weight-regular;
   font-size: 17px;
   line-height: 28.9px;
-  color: $whatwe-text-color-muted;
+  color: $color-muted-gray;
   margin-bottom: 28px;
   max-width: 521.36px;
 }
@@ -96,7 +96,7 @@
 
 .checkwraper {
   border-radius: $whatwe-button-radius;
-  background-color: $whatwe-secondary-color;
+  background-color: $color-primary-bg;
   height: 20px;
   width: 20px;
   display: flex;
@@ -107,22 +107,22 @@
   font-weight: $whatwe-font-weight-regular;
   font-size: 17px;
   line-height: 28.9px;
-  color: $whatwe-text-color-muted;
+  color: $color-muted-gray;
 }
 
 .morebutton {
-  color: $whatwe-primary-color;
+  color: $color-highlight;
   font-size: 17px;
   line-height: 28.9px;
   font-weight: $whatwe-font-weight-bold;
   padding: 16px 25px;
-  background-color: $whatwe-secondary-color;
-  border: $whatwe-secondary-color;
+  background-color: $color-primary-bg;
+  border: $color-primary-bg;
   border-radius: $whatwe-button-radius;
   margin-top: 18.96px;
   transition: transform 0.3s ease;
 
-  @include button-hover($whatwe-primary-color, $whatwe-secondary-color);
+  @include button-hover($color-highlight, $color-primary-bg);
 }
 
 .webdesignimg {
@@ -134,7 +134,7 @@
 @media (max-width: 1200px) {
   .webdesignmain,
   .webdesignmain2 {
-    gap: 60px;
+    gap: 30px;
   }
 
   .webheading {
@@ -159,7 +159,7 @@
   .webdesignmain,
   .webdesignmain2 {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
 
   .webheading {

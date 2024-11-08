@@ -6,7 +6,7 @@
 // Home Section Styles
 .homemain {
   padding: 25px;
-  background-color: $home-primary-bg-color;
+  background-color: $color-primary-bg;
 }
 
 .homesemimain {
@@ -48,11 +48,11 @@
 }
 
 .homehead {
-  @include text-styles(600, 54px, 62.1px, $home-white);
+  @include text-styles(600, 54px, 62.1px, $color-white);
 }
 
 .homesemihead {
-  @include text-styles(500, 24px, 38.4px, $home-white);
+  @include text-styles(500, 24px, 38.4px, $color-white);
 }
 
 // Media Queries for Responsiveness

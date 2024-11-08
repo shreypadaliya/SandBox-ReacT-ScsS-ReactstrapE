@@ -3,11 +3,11 @@
 
 // Main container styles
 .diffmain {
-  background-color: $diff-bg-color;
+  background-color: $color-primary-bg;
   padding: 12.5px 25px;
 
   .diffsubmain {
-    background-color: $diff-white-color;
+    background-color: $color-white;
     border-radius: 20px;
 
     .diffsubsemimain {
@@ -47,14 +47,14 @@
   font-weight: 600;
   font-size: $diff-font-size-medium;
   line-height: 21.6px;
-  color: $diff-secondary-color;
+  color:  $color-light-gray;
 }
 
 .diffsubhead {
   font-weight: 600;
   font-size: $diff-font-size-xxxlarge;
   line-height: 50.4px;
-  color: $diff-primary-color;
+  color:$color-dark-gray;
   margin-top: 15.6px;
   margin-bottom: 40.39px;
 }
@@ -81,14 +81,14 @@
         font-weight: 600;
         font-size: $diff-font-size-large;
         line-height: 29px;
-        color: $diff-primary-color;
+        color: $color-dark-gray;
       }
 
       .subleftsemiinfospara {
         font-weight: 500;
         font-size: 17px;
         line-height: 28.9px;
-        color: $diff-tertiary-color;
+        color: $color-muted-gray;
         max-width: 173.26px;
       }
     }
@@ -209,7 +209,7 @@
     font-weight: 600;
     font-size: $diff-font-size-medium;
     line-height: 21.6px;
-    color: $diff-secondary-color;
+    color:  $color-light-gray;
     @include text-center;
   }
 
@@ -217,7 +217,7 @@
     font-weight: 600;
     font-size: $diff-font-size-xxxlarge;
     line-height: 50.4px;
-    color: $diff-primary-color;
+    color: $color-dark-gray;
     @include text-center;
     max-width: 741.95px;
     display: flex;
@@ -245,7 +245,7 @@
   font-weight: 600;
   line-height: 45px;
   font-size: 45px;
-  color: $diff-highlight-color;
+  color: $color-highlight;
   margin-bottom: 14px;
 }
 
@@ -253,7 +253,7 @@
   font-weight: 600;
   line-height: 28.9px;
   font-size: 17px;
-  color: $diff-tertiary-color;
+  color: $color-muted-gray;
 }
 
 .achiveimg {
